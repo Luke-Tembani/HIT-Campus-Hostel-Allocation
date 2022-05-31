@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Student Dashboard</title>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    
+    <link rel="stylesheet" href="css/cards.css">
+
+    <style>
+    form {
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+    input,select{
+        float: left;
+        clear:left;
+    }
+
+    label{
+        float: left;
+        clear:left;
+    }
+
+    button{
+    float: left;
+    width: 20%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background: #8ebf42; 
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    clear: left;
+    }
+
+    .responce{
+      float: left;
+      clear: left;
+      padding: 10px;
+      margin-left: 20px;
+    }
+
+    
+
+    </style>
+
+
+
+</head>
+
+
+
+   <%- include('./partials/student/sidebar.ejs') %>
+
+
+   <%- include('./partials/student/topbar.ejs') %>
+
+
+
+    <form action="/apply" method="post">
+
+        <div class="applicationForm">
+         <div class="regnumber">
+                <label for="regnum">Registration Number</label>
+                <input id="regnum" name="regnum" type="text">
+            </div>
+
+            <div class="gender">
+                <label>Gender</label>              
+                <select name="gender" required>
+                  <option value=""></option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+    
+            <div class="hostel">
+                <label>Hostel</label>              
+                <select name="hostel" required>
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+        
+            <div class="part">
+                <label>Part</label>              
+                <select name="part" required>
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+
+            <div class="semester">
+                <label>Semester</label>              
+                <select name="semester" required>
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </div>
+
+                <button>Apply</button>
+
+               
+    
+    
+    
+        </div>
+        
+        
+
+
+     
+    </form>
+
+    <div class="responce">
+      <%= Message %>
+
+
+    </div>
+  
+        
+   <%- include('./partials/student/footer') %>
+
+   
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+</html>

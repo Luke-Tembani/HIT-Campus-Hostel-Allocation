@@ -1,0 +1,39 @@
+Objectives
+
+- Auto allocation of students to available vacancies
+
+- Easy application process
+
+- Provide News 
+
+- Verify Fees Payment
+
+- shortlist students allocated to vacancies
+
+- Send application status to successful students 
+
+DashBoards
+
+- Student 
+  - logs in
+  - prices of hostel h1 to h4
+  - apply for desired hostel
+  - View allocated room number / notify of unsuccessful applications
+
+- Admin
+  - Revoke vacancy application
+  - Allocation of remaining rooms
+  - Approve allocations
+  - Send bulky emails to successful students
+
+  Login Page
+  -email
+  -password
+
+
+  News 
+ - on login or student dashboard
+
+
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reg.css">
+    <title>Registration</title>
+</head>
+<body>
+    <header class="jumbotron">
+        <h1 class="text-center display-3" id="title"> Registration Form </h1>
+        <div class="container">
+            <p id="description" class="lead">
+                <strong> Descripion: </strong> Short form asking a client/viewer simple questions. Related to computer science and web development. Webpage uses bootstrap 4.3.1. Form demonstrates inputs, buttons, button groups, checkboxes, dropdowns and more! </p>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <form id="survey-form">
+            <h2 class="display-5"> Basic Info </h2>
+            <!-- TEXTB0X: FIRST NAME -->
+            <div class="form-group d-flex">
+                <input class="form-control" type="text" id="name" placeholder="Last name">
+                <br>
+
+            <!-- BIRTHDATE -->
+	        <label for="part">Part</label>
+            <div class="form-group d-flex">
+	            <!-- DROPDOWN: Month -->
+	            <select id="dropdown" class="form-control col-sm-4" name="part">
+	                <option value="1">1</option>
+	                <option value="2">2</option>
+	                <option value="3">3</option>
+	                <option value="4">4</option>
+	                
+	            </select>
+                <br>
+
+                    <!-- DROPDOWN: Date -->
+            <select id="dropdown" class="form-control col-sm-4" name="semester">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <br>
+
+            <!-- DROPDOWN: Year -->
+            <select id="dropdown" class="form-control col-sm-4" name="Hostel">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <br>
+
+         <select id="dropdown" class="form-control col-sm-4" name="Gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+					</div>
+
+                    <br>
+
+
+            <!-- BUTTON: SUBMIT -->
+            <button class="btn btn-primary mb-5" id="submit">
+                Submit
+            </button>
+        </form>
+        </div>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+</body>
+</html>

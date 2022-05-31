@@ -1,0 +1,54 @@
+                 <!-- DataTales Example -->
+                 <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Applicants</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                           <form action="/allocate" method="get">
+
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Email</th>
+                                        <th>Part</th>
+                                        <th>#</th>
+                                        <th>#</th>
+                                        <th>#</th>
+                                        <th>#</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% if(applicants.length>0){ %>
+
+                                        <% applicants.forEach(data=>{ %>
+
+                                            <tr>
+                                                <td><%= data.email %></td>
+                                                <td><%= data.part %></td>
+                                                <td>#</td>
+                                                <td>#</td>
+                                                <td>#</td>
+                                                <td>#</td>
+                                            </tr>
+               
+                                      <%})%>
+
+
+                                    <%}%>
+
+                                </tbody>
+                            </table>
+                            <input value="ALLOCATE STUDENTS" type="submit"> 
+                           </form>
+
+                  
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+ 
